@@ -13,6 +13,7 @@ const Login = () => {
         fontSize={14}
         type="email"
         value={inputs.email}
+        size={"sm"}
         onChange={(e) => {
           setInputs({ ...inputs, email: e.target.value });
         }}
@@ -22,6 +23,7 @@ const Login = () => {
         fontSize={14}
         type="password"
         value={inputs.password}
+        size={"sm"}
         onChange={(e) => {
           setInputs({ ...inputs, password: e.target.value });
         }}
