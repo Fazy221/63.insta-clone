@@ -55,7 +55,7 @@ const Signup = () => {
             setInputs({ ...inputs, password: e.target.value });
           }}
         />
-        <InputRightElement>
+        <InputRightElement h="full">
           <Button
             variant={"ghost"}
             size={"sm"}
@@ -71,8 +71,6 @@ const Signup = () => {
           {error.message}
         </Alert>
       )}
-
-
       <Button w={"full"} colorScheme="blue" size={"sm"} fontSize={14} isLoading={loading} onClick={() => signup(inputs)}>
         Sign Up
       </Button>
